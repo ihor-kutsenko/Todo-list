@@ -1,8 +1,13 @@
+body {
+  display: flex;
+}
 .wrapper {
   max-width: 400px;
   margin: 0 auto;
 }
 .header {
+  display: flex;
+  flex-direction: column;
   background-color: #eee;
   padding: 20px;
   border-radius: 15px;
@@ -51,6 +56,8 @@
   }
 }
 .item-checkbox {
+  width: 20px;
+  height: 20px;
   flex: 0 0 auto;
   margin-right: 5px;
 }

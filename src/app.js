@@ -1,13 +1,12 @@
 export default class App {
   #items = [];
+  
 
   
-  constructor() {
-    
-
-    this.addButton = document.querySelector('#addButton');
-    this.addInput = document.querySelector('#addInput');
-    this.listEl = document.querySelector('#list');
+  constructor(addButton, addInput, listEl) {
+    this.addButton = addButton;
+    this.addInput = addInput;
+    this.listEl = listEl;
 
     this.#bindEvents();
     this.load();
